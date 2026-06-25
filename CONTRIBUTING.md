@@ -1,6 +1,6 @@
-# Contributing to Mission T.H.A.E.L.Y.X
+# Contributing to T.H.A.E.L.Y.X
 
-Thank you for your interest in contributing to **Mission T.H.A.E.L.Y.X**  
+Thank you for your interest in contributing to **T.H.A.E.L.Y.X**  
 This project aims to build an advanced, realistic, web‑based spaceflight simulator.  
 All contributions are welcome: bug fixes, new features, documentation improvements, ideas, and discussions.
 
@@ -50,5 +50,5 @@ If you add new features, update the README or create additional documentation in
 ---
 
 ## 🤝 Thank You
-Every contribution helps improve Mission T.H.A.E.L.Y.X  
+Every contribution helps improve T.H.A.E.L.Y.X  
 Your effort is genuinely appreciated.
