@@ -1,7 +1,7 @@
-🚀 Mission A.S.T.R.I.S. — Advanced Spaceflight Simulator
-Mission A.S.T.R.I.S. is an advanced, fully web‑based spaceflight simulator designed to model realistic physics, multi‑technology propulsion systems, and complex aerodynamic dynamics directly in the browser.
+🚀 Mission T.H.A.E.L.Y.X — Advanced Spaceflight Simulator
+Mission T.H.A.E.L.Y.X is an advanced, fully web‑based spaceflight simulator designed to model realistic physics, multi‑technology propulsion systems, and complex aerodynamic dynamics directly in the browser.
 
-Built for space enthusiasts, students, developers, and mission designers, ASTRIS combines scientific accuracy, engineering modularity, and a fully customizable approach to spacecraft simulation — all without requiring installation.
+Built for space enthusiasts, students, developers, and mission designers, T.H.A.E.L.Y.X combines scientific accuracy, engineering modularity, and a fully customizable approach to spacecraft simulation — all without requiring installation.
 
 🌍 Key Features
 Web‑based: runs on any modern browser.
@@ -17,7 +17,7 @@ Real engineering datasets: materials, aerodynamic coefficients, physical constan
 Written in JavaScript: lightweight, extensible, modifiable.
 
 🔎 SEO‑Optimized Description
-Mission ASTRIS is a web‑based space flight simulator implementing:
+Mission T.H.A.E.L.Y.X is a web‑based space flight simulator implementing:
 
 advanced physical models for aerodynamics, thermodynamics, and propulsion
 
@@ -136,7 +136,7 @@ k — thermal conductivity
 conditions — compatibility with propellant classes
 
 🛰️ Summary
-Mission A.S.T.R.I.S. is not just a web simulator:
+Mission T.H.A.E.L.Y.X is not just a web simulator:
 it is an advanced aerospace physics engine, featuring a massive engineering database and a modular structure that enables realistic simulations of:
 
 propulsion
