@@ -994,7 +994,7 @@ class SpaceSimulator {
                 temperatura = computePlanetaryTemperature((targetAtmo.composition),globalGameData.Star.luminosity,targetDistance,albedo,rho,targetAtmo?.molecularWeight??0,targetAtmo?.scaleHeight??0,TargetMass,targetRadius,targetAtmo?.density??0,targetAtmo?.maxAltitude??0,PressioneSup,globalGameData.Starship?.altitudineRelativa??0)
                 if(isFinite(Pressione)&&isFinite(temperatura)){
                     rightLinesText.push(`kg/m³; Local temperature: ${(temperatura-273.15).toFixed(4)} °C ║`);    
-                    rightLinesText.push(`Actual atmosphere pressure: ${Pressione} mPa ║`);
+                    rightLinesText.push(`Actual atmosphere pressure: ${(Pressione / 1000).toFixed(2)} kPa ║`);
                     const R = 8.314;
                     const Mw_kgmol = (rho * R * temperatura) / (Pressione);
                     const Mw_dynamic = Mw_kgmol * 1000;
