@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+<!-- Copyright 2026 Leonardo Dilecce -->
 # Contributing to T.H.A.E.L.Y.X
 
 Thank you for your interest in contributing to **T.H.A.E.L.Y.X**  
