@@ -3,7 +3,7 @@
   * class PhysicsEngine 
   * ------------
   * 
-  * Last Update: 2024-06-15
+  * Last Update: 2026-06-28
   * -------------
   * 
   * This class encapsulates the core physics calculations for celestial mechanics. 
@@ -42,5 +42,41 @@
   **/
 class PhysicsEngine 
 { 
-    constructor() {};
+    // Constructor for the PhysicsEngine class
+    // Parameters:
+    // - maxKeplerSolverIterations: Maximum iterations for solving Kepler's equation
+    // - keplerTolerance: Tolerance for convergence in Kepler's equation solver
+    // - maxRelativisticPrecision: Maximum allowed precision for relativistic calculations
+    constructor(
+        maxKeplerSolverIterations = 100, 
+        keplerTolerance = 1e-6,
+        maxRelativisticPrecision = 0.9999
+    ) 
+    {
+        this.maxKeplerSolverIterations = maxKeplerSolverIterations;
+        this.keplerTolerance = keplerTolerance;
+        this.maxRelativisticPrecision = maxRelativisticPrecision;
+    };
+    //Defined in js/physics/Engine/CalculateTrueAnomaly.js
+    CalculateTrueAnomaly(
+        a, 
+        e, 
+        t, 
+        M0,
+        centralMass
+    ) {};
+    //Defined in js/physics/Engine/CalculateTrueAnomalyRelativisticCorrection.js
+    CalculateTrueAnomalyRelativisticCorrection(
+        theta,
+        a, 
+        e,
+        t,
+        centralMass
+    ) {};
+    //Defined in js/physics/Engine/SolveKepler.js
+    SolveKepler(
+        M, 
+        e, 
+        tolerance = 1e-6
+    ) {};
 }
