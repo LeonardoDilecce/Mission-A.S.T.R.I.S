@@ -1,13 +1,9 @@
 PhysicsEngine.prototype.CalculateTrueAnomaly = function(
-    star, 
-    chronometer, 
     a, 
     e, 
     t, 
-    M0 = 0, 
-    centralMass, 
-    planet, 
-    deltaTime
+    M0,
+    centralMass
 ) 
 {
     const n = Math.sqrt(G * centralMass / Math.pow(a, 3)); 
