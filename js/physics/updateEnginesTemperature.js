@@ -3,7 +3,7 @@ function updateEnginesTemperature(distanza, surface, rho, v, area, deltaTime,mas
     const ε_surface = materialCpMap[surface.material]?.ε ?? 0.8;
     const T0 = surface.T0 ?? surface.actualTemperature ?? 288.15;
     const composition = targetAtmosphere?.composition ?? {"O" : 0};
-    const cp_gas = calculateGasCp(composition);
+    const cp_gas = physicsEngine.ComputeAtmosphericSpecificHeat(composition);
     let newTStatic = 2.725;
     let Tenv = newTStatic + v * v / (2 * cp_gas);
     if (rho === 0 || composition.length === 0) Tenv = 2.725;

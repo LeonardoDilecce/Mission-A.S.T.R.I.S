@@ -42,18 +42,28 @@ PhysicsEngine.prototype.ComputeAtmosphericSpecificHeat = function(
     let total = 0;
     let totalPct = 0;
     // Iterate through each gas in the mixture
+    // (percentages may not sum exactly to 100)
+    for (const gas in composition) 
+    {
+        // Percentage of this gas in the mixture
+        const pct = composition[gas];
+        totalPct += pct;
+    }
+    // Avoid division by zero (empty or invalid composition)
+    if (totalPct <= 0) return 0;
+    // Weighted average Cp (J/kg·K)
     for (const gas in composition) 
     {
         // Specific heat capacity of the gas (J/kg·K)
-        const cp = gasThermalMap[gas].specificHeat;
+        const cp = gasThermalMap[gas]?.specificHeat;
+        if (!cp) continue; // Skip unknown gases
         // Percentage of this gas in the mixture
         const pct = composition[gas];
+        // Normalized fraction (robust even if totalPct ≠ 100)
+        const fraction = pct / totalPct;
         // Weighted contribution to Cp
-        total += cp * pct;
-        // Track total percentage for normalization
-        totalPct += pct;
+        total += fraction * cp;
     }
     // Return weighted average Cp
-    // (works even if percentages do not sum exactly to 100)
-    return total / totalPct;
+    return total;
 }

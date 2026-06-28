@@ -4,7 +4,7 @@ function updateReentryTemperature(distanza, surface, rho, v, area, deltaTime,mas
     let Tenv = 2.725; 
     if (targetAtmosphere && targetAtmosphere.composition) {
         const composition = targetAtmosphere.composition;
-        const cp_gas = calculateGasCp(composition);
+        const cp_gas = physicsEngine.ComputeAtmosphericSpecificHeat(composition);
         const pressure = physicsEngine.ComputeAtmosphericPressure(rho, 288.15, composition);
         const T0 = surface.T0 ?? surface.actualTemperature ?? 288.15;
         let newTStatic = 2.725;
