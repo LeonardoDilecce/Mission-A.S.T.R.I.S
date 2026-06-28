@@ -59,7 +59,7 @@ class PhysicsEngine
         maxRelativisticPrecision = 0.9999,
         atmosphericColumnSimulationStep = 1,
         atmosphericColumnSimulationEpsilon = 1.4,
-        atmosphericColumnSimulationLapseRateFactor = 1 - 26.6,
+        atmosphericColumnSimulationLapseRateFactor = 0.06976,
         atmosphericColumnSimulationLapseRateAttenuation = 25,
         G = 6.67430e-11,
         c = 299792458,
