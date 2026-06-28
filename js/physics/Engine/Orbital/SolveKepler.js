@@ -1,6 +1,9 @@
 /**
   * 
-  * function SolveKepler(M, e)
+  * function SolveKepler(
+  *     M, 
+  *     e
+  * )
   * 
   * Solves Kepler’s Equation:
   *      M = E − e·sin(E)
@@ -26,7 +29,10 @@
   * of iterations is reached.
   * -------------
   * Usage:
-  *   const E = physicsEngine.SolveKepler(M, e);
+  *   const E = physicsEngine.SolveKepler(
+  *       M, 
+  *       e
+  *   );
   * 
   **/
 

@@ -1,6 +1,8 @@
 /**
   * 
-  * function ComputeAtmosphericSpecificHeat(composition)
+  * function ComputeAtmosphericSpecificHeat(
+  *     composition
+  * )
   * 
   * Computes the specific heat capacity at constant pressure (Cp) of a gas
   * mixture using a weighted average based on the composition percentages.
@@ -28,7 +30,9 @@
   *   Specific heat capacity of the mixture (J/kg·K)
   * -------------
   * Usage:
-  *   const cp = physicsEngine.ComputeAtmosphericSpecificHeat(atmosphereComposition);
+  *   const cp = physicsEngine.ComputeAtmosphericSpecificHeat(
+  *       atmosphereComposition
+  *   );
   * 
   **/
 PhysicsEngine.prototype.ComputeAtmosphericSpecificHeat = function(

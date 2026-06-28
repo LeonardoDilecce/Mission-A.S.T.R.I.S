@@ -1,6 +1,8 @@
 /**
   * 
-  * function ComputeAtmosphericMolarMass(composition)
+  * function ComputeAtmosphericMolarMass(
+  *     composition
+  * )
   * 
   * Computes the effective molar mass (kg/mol) of a gas mixture using the
   * weighted average of the molar masses of its components.
@@ -23,7 +25,9 @@
   *   Effective molar mass of the mixture (kg/mol)
   * -------------
   * Usage:
-  *   const mw = physicsEngine.ComputeAtmosphericMolarMass(atmosphereComposition);
+  *   const mw = physicsEngine.ComputeAtmosphericMolarMass(
+  *       atmosphereComposition
+  *   );
   * 
   **/
 PhysicsEngine.prototype.ComputeAtmosphericMolarMass = function(

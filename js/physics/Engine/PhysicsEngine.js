@@ -56,12 +56,20 @@ class PhysicsEngine
     constructor(
         maxKeplerSolverIterations = 100, 
         keplerTolerance = 1e-6,
-        maxRelativisticPrecision = 0.9999
+        maxRelativisticPrecision = 0.9999,
+        atmosphericColumnSimulationStep = 1,
+        atmosphericColumnSimulationEpsilon = 1.4,
+        atmosphericColumnSimulationLapseRateFactor = 1 - 26.6,
+        atmosphericColumnSimulationLapseRateAttenuation = 25
     ) 
     {
         this.maxKeplerSolverIterations = maxKeplerSolverIterations;
         this.keplerTolerance = keplerTolerance;
         this.maxRelativisticPrecision = maxRelativisticPrecision;
+        this.atmosphericColumnSimulationStep = atmosphericColumnSimulationStep;
+        this.atmosphericColumnSimulationEpsilon = atmosphericColumnSimulationEpsilon;
+        this.atmosphericColumnSimulationLapseRateFactor = atmosphericColumnSimulationLapseRateFactor;
+        this.atmosphericColumnSimulationLapseRateAttenuation = atmosphericColumnSimulationLapseRateAttenuation;
     };
     //Defined in js/physics/Engine/Orbital/CalculateTrueAnomaly.js
     CalculateTrueAnomaly(
@@ -96,5 +104,16 @@ class PhysicsEngine
     //Defined in js/physics/Engine/Atmospheric/ComputeSpecificHeat.js
     ComputeAtmosphericSpecificHeat(
         composition
+    ) {};
+    //Defined in js/physics/Engine/Atmospheric/ComputeAtmosphericColumn.js
+    ComputeAtmosphericColumn(
+        composition, 
+        planetMass,
+        planetRadius,
+        T_final,
+        P_surface,
+        altitudeStart,
+        altitudeEnd,
+        baseDensity
     ) {};
 }

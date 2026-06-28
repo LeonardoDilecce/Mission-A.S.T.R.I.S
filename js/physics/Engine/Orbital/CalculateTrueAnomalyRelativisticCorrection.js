@@ -1,6 +1,12 @@
 /**
   * 
-  * function CalculateTrueAnomalyRelativisticCorrection(theta, a, e, t, centralMass)
+  * function CalculateTrueAnomalyRelativisticCorrection(
+  *     theta, 
+  *     a, 
+  *     e, 
+  *     t, 
+  *     centralMass
+  * )
   * 
   * Calculates the relativistic correction to the True Anomaly (ν) for a Keplerian orbit,
   * applying the General Relativity perihelion precession to the Newtonian true anomaly (θ).
@@ -28,7 +34,13 @@
   *   Relativistically corrected true anomaly (rad)
   * -------------
   * Usage:
-  *   const nuRel = physicsEngine.CalculateTrueAnomalyRelativisticCorrection(theta, a, e, t, centralMass);
+  *   const nuRel = physicsEngine.CalculateTrueAnomalyRelativisticCorrection(
+  *       theta, 
+  *       a, 
+  *       e, 
+  *       t, 
+  *       centralMass
+  *   );
   * 
   **/
 PhysicsEngine.prototype.CalculateTrueAnomalyRelativisticCorrection = function(

@@ -1,6 +1,12 @@
 /**
   * 
-  * function CalculateTrueAnomaly(a, e, t, M0, centralMass)
+  * function CalculateTrueAnomaly(
+  *     a, 
+  *     e, 
+  *     t, 
+  *     M0, 
+  *     centralMass
+  * )
   * 
   * Calculates the True Anomaly (ν) for a Keplerian orbit given:
   *   - a           : semi-major axis (m)
@@ -23,7 +29,13 @@
   * The returned value represents the Newtonian (non‑relativistic) true anomaly.
   * -------------
   * Usage:
-  *   const nu = physicsEngine.CalculateTrueAnomaly(a, e, t, M0, centralMass);
+  *   const nu = physicsEngine.CalculateTrueAnomaly(
+  *       a,
+  *       e, 
+  *       t, 
+  *       M0, 
+  *       centralMass
+  *   );
   * 
   **/
 PhysicsEngine.prototype.CalculateTrueAnomaly = function(

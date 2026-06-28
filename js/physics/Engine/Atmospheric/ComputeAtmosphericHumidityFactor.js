@@ -1,6 +1,8 @@
 /**
   * 
-  * function ComputeAtmosphericHumidityFactor(composition)
+  * function ComputeAtmosphericHumidityFactor(
+  *     composition
+  * )
   * 
   * Computes the weighted humidity factor of a gas mixture based on its
   * composition. Each gas contributes according to its percentage and its
@@ -25,7 +27,9 @@
   *   Weighted humidity factor of the mixture (dimensionless)
   * -------------
   * Usage:
-  *   const hum = physicsEngine.ComputeAtmosphericHumidityFactor(atmosphereComposition);
+  *   const hum = physicsEngine.ComputeAtmosphericHumidityFactor(
+  *       atmosphereComposition
+  *   );
   * 
   **/
 PhysicsEngine.prototype.ComputeAtmosphericHumidityFactor = function(
