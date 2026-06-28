@@ -52,7 +52,10 @@ PhysicsEngine.prototype.ComputeAtmosphericSpecificHeat = function(
         totalPct += pct;
     }
     // Avoid division by zero (empty or invalid composition)
-    if (totalPct <= 0) return 0;
+    if (totalPct <= 0) 
+    {
+        return 0;
+    }
     // Weighted average Cp (J/kg·K)
     for (const gas in composition) 
     {
