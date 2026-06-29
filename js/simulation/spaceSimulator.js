@@ -1121,7 +1121,7 @@ class SpaceSimulator {
                     if((stage.surface.maxTemperature) < maxCp) maxCp = stage.surface.maxTemperature; 
                     count+=1;   
                 }else{
-                    EnigeneeringArray.push(`ERROR:  Stage Data Unavailabile! ║║`)
+                    EnigeneeringArray.push(`ERROR: Stage Data Unavailabile! ║║`)
                     EnigeneeringArray.push(`Build your starship ║║`)       
                 }
                 EnigeneeringArray.push(`║║`);
@@ -1174,7 +1174,7 @@ class SpaceSimulator {
                         EtermTotale += stage.Engine.surface.actualTemperature * stage.Engine.mass * pcp;
                         mCpTotale += stage.Engine.mass * pcp;
                     }else{
-                        EnigeneeringArray.push(`ERROR:  Engine Data Unavailabile! ║║`)
+                        EnigeneeringArray.push(`ERROR: Engine Data Unavailabile! ║║`)
                         EnigeneeringArray.push(`Build your starship ║║`)       
                     }
                     EnigeneeringArray.push(`║║`);
@@ -1280,7 +1280,7 @@ class SpaceSimulator {
                         EtermTotale += stage.parachute.surface.actualTemperature * stage.parachute.mass * pcp;
                             mCpTotale += stage.parachute.mass * pcp;
                     }else{
-                        EnigeneeringArray.push(`ERROR:  Heat Shield Data Unavailabile! ║║`)
+                        EnigeneeringArray.push(`ERROR:Heat Shield Data Unavailabile! ║║`)
                         EnigeneeringArray.push(`Build your starship ║║`)                        
                     }
                 index+=1;                        
